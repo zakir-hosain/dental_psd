@@ -1,0 +1,691 @@
+/*---------------------------------------*/
+/*--------------Basic Setup--------------*/
+/*---------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 80rem;
+    margin: auto;
+}
+.container1{
+    max-width: 140rem;
+    margin: auto;
+}
+/*---------------------------------------*/
+/*--------------Header Area--------------*/
+/*---------------------------------------*/
+header{
+    padding: 3rem 0;
+    position: relative;
+}
+header .flex{
+    display: flex;
+    justify-content: space-between
+}
+header .flex img{
+    width: 20rem;
+}
+header .flex .right{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+header .flex .right .one{
+    margin: 0 .8rem;
+}
+header .flex .right .one:last-child{
+    margin-right: 0;
+}
+header h3{
+    font-size: 1.4rem;
+}
+header p{
+    font-size: 1.1rem;
+    color: #b1b1b1;
+    font-weight: bold;
+}
+header .text{
+    float: right;
+    margin-left: .3rem;
+}
+header .flex .right .one svg:not(:root).svg-inline--fa{
+    color: #f7936a;
+    float: left;
+    font-size: 3.2rem;
+    margin-right: .5rem;
+}
+/*---------------------------------------*/
+/*---------------Menu Area---------------*/
+/*---------------------------------------*/
+.menu-area{
+    background: #00cce1;
+    height: 4.8rem;
+    position: relative;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 204, 225, 0.89);
+}
+.menu-area .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-area span{
+    margin-left: .3rem;
+}
+.menu-area ul li{
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+.menu-area ul li a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    margin: 0 .5rem; 
+}
+.menu-area ul li a:hover{
+    background: #f69165;
+}
+.menu-area ul li:first-child a{
+    margin-left: 0;
+}
+.menu-area .box{
+    background: #f69165;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.menu-area .box a{
+    color: #fff;
+}
+.mobile-menu span{
+    color: #fff;
+    font-size: 2.8rem;
+    cursor: pointer;
+    float: left;
+    display: none;
+    margin-top: .7rem;
+}
+.mobile-menu .overlay{
+    width: 0%;
+    height: 30rem;
+    background: rgba(0, 204, 225, 0.86);
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+}
+.mobile-menu .close{
+    color: #fff;
+    font-size: 3rem;
+    float: right;
+    margin-right: .5rem;
+}
+.mobile-menu .overlay-content{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.mobile-menu .overlay-content a{
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.mobile-menu .overlay-content a:hover{
+    background: #f69165;
+}
+/*---------------------------------------*/
+/*--------------Slider Area--------------*/
+/*---------------------------------------*/
+.slider-area{
+    background: url(../../images/slide.png);
+    height: 46rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.slider-area img{
+    width: 52rem;
+    margin-left: 5rem;
+    margin-top: 1.6rem;
+}
+.slider-area .left{
+    width: 50%;
+    float: left;
+    margin-top: 12rem;
+}
+.slider-area .right{
+    width: 50%;
+    margin-top: 1rem;
+    float: right;
+}
+.slider-area h3{
+    background: #00cce1;
+    color: #fff;
+    padding: .8rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    
+    display: inline-block;
+}
+.slider-area h2{
+    background: #f69165;
+    color: #fff;
+    padding: .8rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    display: inline-block;
+}
+.slider-area span{
+    font-size: 1.2rem;
+    color: #6a6a6a;
+    line-height: 1.7;
+    display: block;
+}
+.slider-area .button{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+.slider-area .button-1 a{
+    background: #f69165;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+.slider-area .button-2 a{
+    background: #00cce1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+/*---------------------------------------*/
+/*--------------Welcome Area-------------*/
+/*---------------------------------------*/
+.welcome-area{
+    padding-top: 8rem;
+}
+.welcome-area:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.welcome-area img{
+    width: 48rem;
+    margin-left: 2rem;
+}
+.welcome-area .left{
+    float: left;
+    width: 30%;
+}
+.welcome-area .right{
+    float: right;
+    width: 60%;
+}
+.welcome-area h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.welcome-area h4{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.welcome-area p{
+    color: #797979;
+    font-size: 1.1rem;
+}
+.welcome-area .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+.welcome-area .box{
+    width: 80%;
+    margin: 1rem 0;
+}
+.welcome-area .svg-inline--fa{
+    font-size: 4rem;
+    color: #f69165;
+}
+/*---------------------------------------*/
+/*----------------Meet Area--------------*/
+/*---------------------------------------*/
+.meet-area{
+    padding: 5rem 0;
+    background: #f9f9f9;
+}
+.meet-area img{
+    width: 25rem;
+}
+.meet-area h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.meet-area h4{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.meet-area span{
+    text-align: center;
+}
+.meet-area span img{
+    display: block;
+    margin: auto;
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.meet-area p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #7a7a7a;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.meet-area .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.meet-area .box{
+    border-bottom: .3rem solid #01cbe1;
+    margin-top: 2.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+.meet-area .grid .img-area{
+    position: relative;
+}
+.meet-area .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(51, 51, 51, 0.83);
+    display: none;
+}
+.meet-area .box:hover h4{
+    color: #f69165;
+}
+.meet-area .box:hover{
+    border-bottom: .3rem solid #f69165;
+}
+.meet-area .box:hover .content{
+    display: block;
+}
+.meet-area .grid .img-area .content .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.meet-area .content ul li{
+    display: inline-block;
+    
+}
+.meet-area .content .svg-inline--fa{
+    color: #fff;
+    border: .1rem solid #fff;
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: .5rem;
+}
+.meet-area .content .svg-inline--fa:hover{
+    background: #f69165;
+    border: .1rem solid #f69165;
+}
+/*---------------------------------------*/
+/*--------------Services Area------------*/
+/*---------------------------------------*/
+.services-area{
+    padding: 5rem 0;
+    background: #fff;
+}
+.services-area h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.services-area h4{
+    font-size: 1.7rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+.services-area span{
+    text-align: center;
+}
+.services-area span img{
+    display: block;
+    margin: auto;
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.services-area p{
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.services-area .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.services-area .box{
+    border: .3rem solid #ebebeb;
+    margin-top: 2.5rem;
+    background: #fff;
+    padding: 1.5rem 2rem;
+    width: 95%;
+    margin: 2rem auto;
+}
+.services-area .box:hover a,
+.services-area .box:hover h4{
+    color: #f69165;
+}
+.services-area .box:hover{
+    border: .3rem solid #f69165;
+}
+.services-area .box svg:not(:root).svg-inline--fa{
+    font-size: 3rem;
+    color: #f69165;
+    float: left;
+    margin-right: 1rem;
+}
+.services-area .box p{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.services-area .box a{
+    margin-top: 0;
+    color: #4d4d4d;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+/*---------------------------------------*/
+/*--------------price Area------------*/
+/*---------------------------------------*/
+.price-area{
+    padding: 5rem 0;
+    background: #f9f9f9;
+}
+.price-area h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.price-area p{
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.price-area h3{
+    font-size: 2.3rem;
+    color: #00cce0;
+    text-align: center;
+    font-weight: bold;
+}
+.price-area span{
+    text-align: center;
+}
+.price-area span img{
+    display: block;
+    margin: auto;
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.price-area .box p{
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 11rem;
+    margin: auto;
+    line-height: 2;
+}
+.price-area .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 3rem;
+}
+.price-area .box{
+    border: .5rem solid #fff;
+    margin-top: 2.5rem;
+    background: #f9f9f9;
+    margin-right: 2rem;
+    width: 25rem;
+    padding: 2rem 0;
+}
+.price-area .box .doller{
+    background: #fff;
+    padding: 1.3rem;
+    color: #00cce0;
+    text-align: center;
+    margin: 2rem 0;
+}
+.price-area .box:hover .doller{
+    color: #fff;
+    background: #f69165;
+}
+.price-area .box:hover h3{
+    color: #f69165;
+}
+.price-area .box:hover{
+    border: .5rem solid #f69165;
+}
+.price-area .box a{
+    background: #00cce0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9rem;
+    width: 8rem;
+    height: 2.2rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: .5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.price-area .box:hover a{
+    color: #fff;
+    background: #f69165;
+}
+/*---------------------------------------*/
+/*--------------Client Area-------------*/
+/*---------------------------------------*/
+.client-area{
+    padding: 6rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.78)), url(../../images/footer.png);
+    background-size: cover;
+    background-position: center;
+}
+.client-area h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+.client-area p{
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.client-area span img{
+    display: block;
+    margin: auto;
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.client-area .grid{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.client-area .box img{
+    width: 70%;
+}
+/*---------------------------------------*/
+/*---------------Footer Area-------------*/
+/*---------------------------------------*/
+.footer-area{
+    padding: 8rem;
+    background: #1b1b1b;
+}
+.footer-area .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.footer-area p{
+    color: #b0b0b0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.footer-area .content{
+    margin-top: 1rem;
+}
+.footer-area .left .add{
+    margin: 2rem 0;
+}
+.footer-area .left .add p{
+    color: #b0b0b0;
+    float: right;
+    width: 85%;
+    font-size: 1.1rem;
+}
+.footer-area h2{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.footer-area .left img{
+    width: 14rem;
+    margin-bottom: 3rem;
+}
+
+.footer-area .left svg:not(:root).svg-inline--fa{
+    color: #03b6cc;
+    font-size: 2.5rem;
+    width: 10%;
+    margin-top: .2rem;
+}
+.footer-area .middle img{
+    width: 5.5rem;
+    height: 6.1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.footer-area .middle .man{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-area .middle span{
+    color: #666666;
+}
+.footer-area .right input{
+    background: none;
+    border: .1rem solid #373737;
+    color: #7a7a7a;
+    height: 3.5rem;
+    width: 18rem;
+    padding-left: 2rem;
+}
+.footer-area .right form{
+    margin: 3rem 0;
+}
+.footer-area .right button{
+    background: #f69165;
+    border: .1rem solid #f69165;
+    color: #fff;
+    height: 3.5rem;
+    width: 7.5rem;
+    margin-left: -1rem;
+    cursor: pointer;
+}
+.footer-area .right .social ul li{
+    display: inline-block;
+    margin: 0 .2rem;
+}
+.footer-area .right .social span{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 800;
+    float: left;
+    margin-right: .8rem;
+}
+.footer-area .right svg:not(:root).svg-inline--fa{
+    color: #fff;
+    padding: .7rem;
+    background: #323232;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.footer-area .right svg:not(:root).svg-inline--fa:hover{
+    background: #f69165;
+}
+.footer-area .scroll-top span{
+    font-size: 2.4rem;
+    color: #fff;
+    position: fixed;
+    right: 4rem;
+    bottom: 6rem;
+    background: rgba(190, 102, 69, 0.66);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*---------------------------------------*/
+/*----------------Last Area--------------*/
+/*---------------------------------------*/
+footer{
+    background: #161616;
+    color: #636363;
+    padding: 2.5rem;
+}
+footer p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+footer p a{
+    color: #01c8dd;
+}

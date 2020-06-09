@@ -1,0 +1,167 @@
+@media only screen and (max-width: 1024px){
+    .container{
+    max-width: 80rem;
+    margin: auto;
+}
+    .welcome-area .left{
+    float: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+    .welcome-area .right{
+    float: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+    .welcome-area .box {
+    width: 95%;
+    margin: 10px 0;
+}
+    .slider-area img{
+    width: 45rem;
+    margin-left: 5rem;
+    margin-top: 7.5rem;
+}
+}
+@media only screen and (max-width:760px){
+    html{
+    font-size: 9px;
+}
+    .menu-area .mobile-menu span{
+        display: block;
+    }
+    header .flex{
+    display: block;
+}
+    header .text{
+    float: left;
+    margin-left: .7rem;
+}
+    header .flex img{
+    display: block;
+    margin: auto;
+}
+    header .flex .right{
+    margin-top: 2rem;
+}
+    .menu-area ul{
+    display: none;
+}
+    .slider-area .left{
+    width: 100%;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
+    .slider-area h3{
+    width: 26rem;
+    display: block;
+    margin: auto;
+}
+    .slider-area .right{
+    width: 100%;
+    margin-top: 0rem;
+    float: none;
+    margin: auto;
+    text-align: center;
+}
+    .slider-area .button{
+    justify-content: center;
+}
+    .slider-area img{
+    width: 40rem;
+    margin-left: 0rem;
+    margin-top: 4.1rem;
+}
+    .slider-area{
+    height: 60rem;
+    padding: 3rem 0;
+}
+    
+    .welcome-area img {
+    width: 40rem;
+    margin-left: 20px;
+}
+    .meet-area .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+    .services-area .box{
+    margin-right: 0rem;
+    width: 70%;
+    margin: 2rem auto;
+}
+    .services-area .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 3rem;
+}
+    .price-area .grid{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 3rem;
+}
+    .price-area .box{
+    margin: 2rem auto;
+}
+    .client-area .box img{
+    width: 50%;
+}
+    .footer-area .grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+    .footer-area h2{
+    margin-bottom: 1rem;
+}
+    .footer-area .left img{
+    margin-bottom: 1rem;
+}
+    .footer-area .middle {
+    margin: 4rem 0;
+    }
+    .container{
+    max-width: 60rem;
+    margin: auto;
+}
+}
+@media only screen and (max-width:480px){
+    .container{
+    max-width: 50rem;
+    margin: auto;
+}
+    html{
+        font-size: 8px;
+    }
+    .slider-area img{
+    width: 35rem;
+}
+    .meet-area .grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+    .welcome-area .grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+    .services-area .grid{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 3rem;
+}
+}
+@media only screen and (max-width:480px){
+    .container{
+    max-width: 40rem;
+    margin: auto;
+}
+    html{
+        font-size: 8px;
+    }
+}
